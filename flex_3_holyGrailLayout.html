@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+        }
+
+        header {
+            border-bottom: 1px solid gray;
+            padding-left: 20px;
+        }
+
+        footer {
+            border-top: 1px solid gray;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .content {
+            display: flex;
+        }
+
+        .content nav {
+            border-right: 1px solid gray;
+        }
+
+        .content aside {
+            border-left: 1px solid gray;
+        }
+
+        nav,
+        aside {
+            flex-basis: 150px;
+            flex-shrink: 0;
+        }
+
+        main {
+            padding: 10px;
+        }
+    </style>
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>ASCII74</h1>
+        </header>
+        <section class="content">
+            <nav>
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                </ul>
+            </nav>
+            <main></main>
+                Was ist Lorem Ipsum?
+                Lorem Ipsum ist ein einfacher Demo-Text für die Print- und Schriftindustrie. Lorem Ipsum ist in der
+                Industrie bereits der Standard Demo-Text seit 1500, als ein unbekannter Schriftsteller eine Hand voll
+                Wörter nahm und diese durcheinander warf um ein Musterbuch zu erstellen. Es hat nicht nur 5 Jahrhunderte
+                überlebt, sondern auch in Spruch in die elektronische Schriftbearbeitung geschafft (bemerke, nahezu
+                unverändert). Bekannt wurde es 1960, mit dem erscheinen von "Letraset", welches Passagen von Lorem Ipsum
+                enhielt, so wie Desktop Software wie "Aldus PageMaker" - ebenfalls mit Lorem Ipsum.
+            </main>
+            <aside>
+                AD
+            </aside>
+        </section>
+        <footer>
+            <a href="#">홈페이지</a>
+        </footer>
+    </div>
+</body>
+
+</html>
