@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .name_project{
+            font-size: 1.75rem;
+            color: burlywood;
+            margin: auto;
+            text-align: center;
+        }
+
+        .container{
+            display: flex;
+            padding: 2em;
+        }
+
+        .component{
+            border: 1px solid burlywood;
+            margin: 1em;
+        }
+
+        .title{
+            font-size: 1.5rem;
+            padding: 1em;
+            border: 1px solid burlywood;
+            background-color: burlywood;
+        }
+
+        .content{
+            font-size: 1.125rem;
+            padding: 1em;
+        }
+
+        @media screen and (max-width: 48rem) {
+            .container {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1 class="name_project">ASCII74</h1>
+    <div class="container">
+        <section class="component">
+            <header class="title">Master Front-end 💻</header>
+            <p class="content">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae accusantium tempora modi
+                reprehenderit ad impedit eveniet et odio ipsum iusto, veniam cumque blanditiis? Perferendis fuga aperiam
+                soluta, commodi debitis numquam nostrum, aliquid reprehenderit, vel nihil quo enim deserunt at ea.</p>
+        </section>
+
+        <section class="component">
+            <header class="title">Career Growth 🔥</header>
+            <p class="content">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur quo omnis repellendus
+            voluptates natus, ipsum sequi officia, beatae cumque, accusamus ut ullam esse nisi perferendis atque eaque
+            odio modi aliquam nihil facilis eveniet? Reiciendis alias omnis animi reprehenderit consequatur ullam.</p>
+        </section>
+    </div>
+</body>
+
+</html>
