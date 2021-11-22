@@ -1,0 +1,99 @@
+body{
+    margin: 0;
+    font-family: 'M PLUS 2';
+}
+
+a{
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #2D333B;
+    padding: 8px 20px;
+}
+
+.navbar__logo{
+    font-size: 20px;
+    color: whitesmoke;
+}
+
+.navbar__logo i{
+    font-size: 30px;
+}
+
+.navbar__menu{
+    display: flex;
+    list-style: none;
+    padding-left: 0;
+    font-size: 15px;
+}
+
+.navbar__menu li{
+    padding: 8px 12px;
+
+}
+
+.navbar__menu li:hover{
+    background-color: #99A7AF;
+    border-radius: 10px;
+}
+
+.navbar__icon {
+    list-style: none;
+    color: white;
+    display: flex;
+    padding-left: 0;
+}
+
+.navbar__icon li{
+    padding: 8px 12px;
+
+}
+
+.navbar__toogleBtn{
+    display: none;
+    position: absolute;
+    right: 32px;
+    font-size: 24px;
+    color: whitesmoke;
+}
+
+@media  screen and (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 8px 24px;
+    }
+
+    .navbar__menu{
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .navbar__menu li{
+        width: 100%;
+        text-align: center;
+    }
+
+    .navbar__icon {
+        display: none;
+        justify-content: center;
+        width: 100%;
+    }
+    
+    .navbar__toogleBtn {
+        display: block;
+    }
+
+    .navbar__menu.active,
+    .navbar__icon.active {
+        display: flex;
+    }
+}
+
