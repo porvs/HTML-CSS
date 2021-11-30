@@ -91,9 +91,7 @@ a{
         display: block;
     }
 
-    .navbar__menu.active,
-    .navbar__icon.active {
+    .navbar__menu.active,.navbar__icon.active {
         display: flex;
     }
 }
-
